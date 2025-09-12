@@ -1,0 +1,96 @@
+You are a full-stack AI developer building a powerful all-in-one business management app called FlowCore.
+
+It is a modern, web-based SaaS platform built using full-stack technologies (React + Tailwind + Node.js + Express + MongoDB or fallback mock DB). The app is modular and includes the following modules:
+
+---
+
+✅ CORE MODULES TO BUILD COMPLETELY:
+
+1. CRM (Customer Relationship Management)
+   - Add, edit, view, delete leads and clients
+   - Assign tags, status, contact history, priority
+   - Sort, filter, and search leads
+
+2. Sales & Revenue
+   - Track deals, revenue sources, and pipeline stages
+   - Create custom reports (monthly, quarterly)
+   - Visual charts (bar, pie, line) to show sales progress
+
+3. Support / Ticketing System
+   - Add ticket (MUST open a form to ask user for ticket title, description, priority, etc.)
+   - View all tickets by status (open, pending, resolved)
+   - Assign to team members
+   - Filter and search tickets
+
+4. Projects & Task Management
+   - Create projects with deadlines, owners, priority
+   - Add subtasks and checklists
+   - Show progress visually
+   - Kanban-style board for task movement (optional)
+
+5. Email & Communication
+   - Send emails to leads or customers
+   - Store communication history per contact
+   - Use SMTP (mock or real)
+
+---
+
+✅ FUNCTIONALITY REQUIREMENTS (IMPORTANT):
+
+- All modules must be **fully functional**, not just UI.
+- “Add” buttons must **open modals or forms** to collect user input.
+- All modals/forms must save to in-memory state or backend.
+- Tabs and buttons should be fully connected to their functions.
+- Do NOT use placeholders or stub functions.
+- If MongoDB is not available, use a JSON file or temporary in-memory DB.
+
+---
+
+🤖 BUILT-IN AI ASSISTANT INSIDE THE APP:
+
+Build an **AI assistant** that behaves just like ChatGPT, integrated visually inside the app as a floating or fixed chat window.
+
+It should:
+- Accept **free-form natural language**, not fixed commands
+- Respond to any request like:
+  - “Create a new ticket about password reset”
+  - “Show me sales from April”
+  - “Fix the leads tab — it’s not working”
+  - “Make a bar chart comparing Q1 and Q2”
+- Understand and trigger actual app functions (fuzzy matching or intent recognition)
+- Auto-suggest fixes or explain errors when things fail
+- Generate custom charts from app data using Chart.js or Recharts
+- Handle data lookup, navigation, record creation, and updates
+- Auto-correct user typos if possible
+
+---
+
+📦 Folder Structure Example:
+
+- `/frontend`
+  - React + Tailwind UI
+  - Pages for each module
+  - Components for modals, charts, tables
+  - AI Assistant UI (chatbox-style)
+- `/backend`
+  - Express.js API
+  - Routes for CRM, Sales, Tickets, Projects
+  - Email via Nodemailer (optional)
+- `/utils`
+  - App state manager
+  - AI helper for interpreting user intent
+
+---
+
+🎯 KEY PRIORITY:
+- Fix all previous issues:
+  - "Add Ticket" not opening form
+  - Tabs not working or loading
+  - AI only responding to rigid phrases
+- All actions must be functional, not just visual
+
+---
+
+🏁 GOAL: Build FlowCore — a full SaaS business platform with functional modules, intelligent natural-language AI assistant, and fully working tabs, forms, and interactions.
+
+This should be built or repaired now, within token and runtime limits.
